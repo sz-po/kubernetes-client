@@ -6,6 +6,7 @@ use GuzzleHttp\Exception\ClientException as GuzzleClientException;
 use GuzzleHttp\Exception\ServerException;
 use Maclof\Kubernetes\Exceptions\ApiServerException;
 use Maclof\Kubernetes\Repositories\CertificateRepository;
+use Maclof\Kubernetes\Repositories\EtcdClusterRepository;
 use React\EventLoop\Factory as ReactFactory;
 use React\Socket\Connector as ReactSocketConnector;
 use Ratchet\Client\Connector as WebSocketConnector;
@@ -55,6 +56,7 @@ use Maclof\Kubernetes\Models\PersistentVolume;
  * @method HorizontalPodAutoscalerRepository horizontalPodAutoscalers()
  * @method CertificateRepository certificates()
  * @method IssuersRepository issuers()
+ * @method EtcdClusterRepository etcdclusters()
  */
 class Client
 {

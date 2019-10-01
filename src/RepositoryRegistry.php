@@ -44,6 +44,9 @@ class RepositoryRegistry implements \ArrayAccess, \Countable
         'certificates'           => Repositories\CertificateRepository::class,
         'issuers'                => Repositories\IssuerRepository::class,
 
+        // etcd.database.coreos.com/v1beta2
+        'etcdclusters'          => Repositories\EtcdClusterRepository::class,
+
     ];
 
     public function __construct()
