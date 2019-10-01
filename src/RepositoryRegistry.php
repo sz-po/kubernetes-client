@@ -39,7 +39,7 @@ class RepositoryRegistry implements \ArrayAccess, \Countable
 
         // networking.k8s.io/v1
         'networkPolicies'        => Repositories\NetworkPolicyRepository::class,
-        
+
         // certmanager.k8s.io/v1alpha1
         'certificates'           => Repositories\CertificateRepository::class,
         'issuers'                => Repositories\IssuerRepository::class,
