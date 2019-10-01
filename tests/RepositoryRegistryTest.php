@@ -9,6 +9,7 @@ class RepositoryRegistryTest extends TestCase
     {
         $registry = new RepositoryRegistry();
 
+
         $this->assertCount(22, $registry);
     }
 
